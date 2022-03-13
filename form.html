@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Science Course</title>
+  </head>
+
+
+ <!-- header-->
+ <body>
+    <!---bagian menu navigasi-->
+    <nav class="navi">
+      <h2>SciCourse</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="class.html">Kelas</a></li>
+        <li class="active"><a href="form.html">Formulir</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+</body>
+
+
+
+<!-- bagian content bawah header -->
+<h2>Isi Formulir berikut untuk mendaftar di SciCourse!</h2>
+<main id="content" class="formulir">
+  <!---bagian konten-->
+    <div style="display: flex;">
+        <form method="post" action="./contact.html">
+          <fieldset class="content"> 
+
+            <!-- template input form -->
+            <label for="nama">
+              <p class="form">Nama</p>
+            <input 
+              class = "input"
+                    name = "name"
+                    type = "text"
+                    placeholder = "Nama Kamu..."
+                    required = ""
+                    oninput = "this.setCustomValidity('')"
+                    oninvalid = "this.setCustomValidity('Belum diisi')" />
+                </label>
+
+            <label for="kota">
+              <p class="form">Asal kota</p>
+            <input
+                    class = "input"
+                    name = "region"
+                    type = "text"
+                    placeholder = "Asal..."
+                    required = ""
+                    oninput = "this.setCustomValidity('')"
+                    oninvalid = "this.setCustomValidity('Belum diisi')" />
+                </label>
+
+            <label for="paket">
+              <p class="form">Pilihan kelas:</p>
+            <input
+                    class = "input"
+                    name = "region"
+                    type = "text"
+                    placeholder = "Kelas ..."
+                    required = ""
+                    oninput = "this.setCustomValidity('')"
+                    oninvalid = "this.setCustomValidity('Belum diisi')" />
+                </label>
+
+                <label for = "message">
+                    <p class = "form">Pesan</p>
+                    <textarea
+                        class = "input"
+                        name = "message"
+                        rows = 3
+                        required = ""
+                        oninput = "this.setCustomValidity('')"
+                        oninvalid = "this.setCustomValidity('Belum diisi')"
+                    ></textarea>
+                </label>
+
+             <input type="submit" value="Submit" />
+            </fieldset>
+          </form>
+</main>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+
+<!-- footer -->
+<footer>
+  <p><a href="form.html" style="text-decoration: none;">Mari bergabung dengan SciCourse!</a></p>
+</footer>
+</html>
